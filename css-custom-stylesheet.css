@@ -1,0 +1,33 @@
+/* Inspired by Steven Frank's shutup.css stylesheet: https://github.com/panicsteve/shutup-css */
+
+/* YouTube (hide comment section) */
+ytm-comment-section-renderer,
+ytd-comments
+{
+	display: none !important;
+}
+
+/* YouTube (fade/un-fade the items in the 'up next' sidebar) */
+ytd-compact-video-renderer, 
+ytd-compact-radio-renderer, 
+ytd-compact-playlist-renderer,
+#companion 
+{
+    opacity: 0.1;
+}
+
+ytd-compact-video-renderer:hover, 
+ytd-compact-radio-renderer:hover, 
+ytd-compact-playlist-renderer:hover, 
+#companion:hover 
+{
+    opacity: 1.0;
+}
+
+/* YouTube (don't show thumbs down icon & the number of dislikes) */
+div#top-level-buttons > ytd-toggle-button-renderer:nth-child(2) {
+    display: none !important;
+}
+
+
+
